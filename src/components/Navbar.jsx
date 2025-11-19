@@ -53,7 +53,7 @@ const Navbar = () => {
 
           ${
             sidebarOpen
-              ? "max-sm:w-56 max-sm:pl-8"    /* reduced width FIX */
+              ? "max-sm:w-56 max-sm:pl-8" /* reduced width FIX */
               : "max-sm:w-0 max-sm:h-0 overflow-hidden"
           }
 
@@ -73,7 +73,7 @@ const Navbar = () => {
         {[
           { label: "Home", href: "/" },
           { label: "About Us", href: "/About" },
-          { label: "Services", href: "/Service" },
+          { label: "Services", href: "/ServicePage" },
           { label: "Contact Us", href: "/Contact" },
         ].map((link, index) => (
           <a
