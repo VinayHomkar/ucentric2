@@ -11,10 +11,15 @@ import {
 // 1. Lazy Import: Only include the pages we have actually built/confirmed.
 const Home = lazy(() => import("./Pages/Home"));
 const About = lazy(() => import("./Pages/About"));
+const Contact = lazy(() => import("./Pages/Contact"));
 const ServicePage = lazy(() => import("./Pages/ServicePage"));
 const Websitedesign = lazy(() => import("./Pages/Websitedesign"));
 const Ecommerce = lazy(() => import("./Pages/Ecommerce"));
-
+const Digitalmarketing = lazy(() => import("./Pages/Digitalmarketing"));
+const PortfolioPage = lazy(() => import("./Pages/Portfolio"));
+const Mobileapp = lazy(() => import("./Pages/Mobileapp"));
+const StudentProjects = lazy(() => import("./Pages/StudentProjects"));
+const PrivacyPolicy = lazy(() => import("./Pages/PrivacyPolicy"));
 // Note: All other pages (Contact, Websitedesign, etc.) remain excluded for clarity.
 
 // --- Custom Features (Preserved Logic) ---
@@ -116,11 +121,17 @@ const App = () => {
             {/* Completed Routes */}
             <Route path="/" element={<Home />} />
             <Route path="/About" element={<About />} />
+
             {/* FIX: Changed path to match the link in Navbar.jsx */}
             <Route path="/ServicePage" element={<ServicePage />} />
             <Route path="/Websitedesign" element={<Websitedesign />} />
+            <Route path="/Contact" element={<Contact />} />
             <Route path="/Ecommerce" element={<Ecommerce />} />
-
+            <Route path="/Digitalmarketing" element={<Digitalmarketing />} />
+            <Route path="/Portfolio" element={<PortfolioPage />} />
+            <Route path="/Mobileapp" element={<Mobileapp />} />
+            <Route path="/StudentProjects" element={<StudentProjects />} />
+            <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
             {/* Incomplete Routes (Commented out) */}
             {/* <Route path="/Contact" element={<Contact />} />
             ... (other routes)
