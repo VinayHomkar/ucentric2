@@ -13,6 +13,7 @@ const Home = lazy(() => import("./Pages/Home"));
 const About = lazy(() => import("./Pages/About"));
 const ServicePage = lazy(() => import("./Pages/ServicePage"));
 const Websitedesign = lazy(() => import("./Pages/Websitedesign"));
+const Ecommerce = lazy(() => import("./Pages/Ecommerce"));
 
 // Note: All other pages (Contact, Websitedesign, etc.) remain excluded for clarity.
 
@@ -118,6 +119,7 @@ const App = () => {
             {/* FIX: Changed path to match the link in Navbar.jsx */}
             <Route path="/ServicePage" element={<ServicePage />} />
             <Route path="/Websitedesign" element={<Websitedesign />} />
+            <Route path="/Ecommerce" element={<Ecommerce />} />
 
             {/* Incomplete Routes (Commented out) */}
             {/* <Route path="/Contact" element={<Contact />} />
