@@ -74,7 +74,9 @@ const ServiceCard = ({ service, index }) => {
       onMouseEnter={() => setVisible(true)}
       onMouseLeave={() => setVisible(false)}
       onMouseMove={handleMouseMove}
-      onClick={() => navigate(service.link)}
+      onClick={() => {
+        navigate(service.link);
+      }}
       className="relative overflow-hidden m-4 rounded-2xl border border-[#38b6ff40]
         shadow-[0_0_20px_#00043320] hover:shadow-[0_0_35px_#38b6ff80]
         transition-all duration-500 group bg-white/5 dark:bg-[#000433]/80 backdrop-blur-md cursor-pointer flex flex-col items-center p-8 hover:scale-105"
@@ -99,7 +101,7 @@ const ServiceCard = ({ service, index }) => {
         <h3 className="text-xl font-bold text-[#38b6ff] text-center">
           {service.title}
         </h3>
-        <p className="text-gray-300 text-sm text-center leading-relaxed">
+        <p className="text-sm leading-relaxed text-center text-gray-300">
           {service.description}
         </p>
       </div>
@@ -110,7 +112,7 @@ const ServiceCard = ({ service, index }) => {
 const ServiceServices = () => (
   <section
     id="services"
-    className="py-20 px-6 bg-black text-white text-center relative"
+    className="relative px-6 py-20 text-center text-white bg-black"
   >
     <motion.h2
       initial={{ opacity: 0, y: 30 }}
@@ -123,7 +125,7 @@ const ServiceServices = () => (
 
     <AccentDivider />
 
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center max-w-6xl mx-auto">
+    <div className="grid max-w-6xl grid-cols-1 gap-8 mx-auto md:grid-cols-2 lg:grid-cols-3 justify-items-center">
       {serviceData.map((service, index) => (
         <ServiceCard key={index} service={service} index={index} />
       ))}
