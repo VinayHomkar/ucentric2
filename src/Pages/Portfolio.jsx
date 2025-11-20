@@ -655,6 +655,7 @@ const PortfolioPage = () => {
           justifyContent: "center",
           color: TEXT_WHITE,
           textAlign: "center",
+          marginTop: "80px",
         }}
       >
         {" "}
@@ -716,7 +717,7 @@ const PortfolioPage = () => {
           >
             {" "}
             <span
-              className="bg-gradient-to-r from-[#38b6ff] to-[#000433]bg-clip-text text-transparent animate-gradient"
+              className="bg-gradient-to-r from-[#38b6ff] to-[#000433] bg-clip-text text-transparent animate-gradient"
               style={{ display: "inline-block" }}
             >
               Digital Portfolio?{" "}

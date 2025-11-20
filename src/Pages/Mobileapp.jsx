@@ -748,6 +748,7 @@ const Mobileapp = () => {
           justifyContent: "center",
           color: TEXT_WHITE,
           textAlign: "center",
+          marginTop: "80px",
         }}
       >
         <div
