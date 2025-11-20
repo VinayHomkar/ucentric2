@@ -397,7 +397,7 @@ const Contact = () => {
           <div>
             <h3 className="text-[#38b6ff] font-semibold mb-2">📞 Phone</h3>
             <p>+91 74061 67017</p>
-            <p>+91 93455 46945</p>
+        
           </div>
           <div>
             <h3 className="text-[#38b6ff] font-semibold mb-2">
